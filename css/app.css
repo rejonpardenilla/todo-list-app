@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body {
+  background-color: #f3f3f3;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+header {
+  background-color: #E2E2E2;
+}
+
+h1 {
+  color: #424242;
+}
+
+h1.show-for-medium {
+  padding-top: 15px;
+}
+
+
+.clickable {
+  cursor: pointer;
+}
+
+
+.size-60 {
+  font-size: 60px;
+}
+
+.size-25 {
+  font-size: 25px;
+}
+
+.size-40 {
+  font-size: 40px;  
+}
+
+.padding-15 {
+  padding-top: 15px;
+}
+
+.padding-25 {
+  padding-top: 25px;
+}
+
+.task, #input-task {
+  width: 100%;
+  height: 100%;
+}
+
+.task {
+  height: 50px;
+  background-color: #E2E2E2;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.task span {
+  line-height: 50px;
+  display: block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.task i {
+  float: right;
+  display: inline-block;
+  margin-top: -55px;
+  margin-right: 10px;
+}
+
+.task:hover {
+  background-color: #D6D6D6;
+}
+
+.task-form-column {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.task-column {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.check-task {
+  float: right;
+  margin: 10px;
+  margin-left: -80px;
+}
+
+.no-tasks {
+  margin-top: 100px;
+  color: #a4a4a4;
+}
+
+.fi-power {
+  color: #F93F40;
+}
+
+.fi-paperclip {
+  color: #424242;
+}
+
+.fi-check {
+  color: #66BB6A;
+  opacity: 0.3;
+}
+
+.fi-check:hover {
+  color: #4CB050;
+  opacity: 1;
+}
+
+/*
+.row {
+  border: 1px solid red;
+}
+
+.column {
+  border: 1px solid blue;
+}
+*/
+
+.push {
+  top: 3px;
+}
+
+.shake {
+  animation: shake 1s;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(4px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-8px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(8px, 0, 0);
+  }
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/login.css">
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <div class="column small-12">
+          <h1 class="text-center">Quacker</h1>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="row align-center">
+      <div class="column small-8 medium-5">
+        Email<input type="email" id="txt-email">
+      </div>
+    </div>
+    <div class="row align-center">
+      <div class="column small-8 medium-5">
+        Password<input type="password" id="txt-password">
+      </div>
+    </div>
+
+    <div class="row align-center">
+      <div class="column small-8 medium-5">
+        <div class="button expanded" id="btn-login">Login</div>
+
+        <div class="row align-center footer">
+          <div class="column small-4 text-left">
+              <a id="signup-link">Sign up</a>
+          </div>
+          <div class="column small-6 text-right">
+              <a href="#">Forgot password</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>
