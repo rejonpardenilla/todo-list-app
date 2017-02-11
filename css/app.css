@@ -5,11 +5,11 @@ body {
 }
 
 header {
-  background-color: #E2E2E2;
+  background-color: #4DD0E1;
 }
 
 h1 {
-  color: #424242;
+  color: #FFF;
 }
 
 h1.show-for-medium {
@@ -49,7 +49,8 @@ h1.show-for-medium {
 
 .task {
   height: 50px;
-  background-color: #E2E2E2;
+  background-color: #FFF;
+  border: solid 1px #CACACA;
   border-radius: 3px;
   display: inline-block;
 }
@@ -59,6 +60,7 @@ h1.show-for-medium {
   display: block;
   vertical-align: middle;
   text-align: center;
+  color: #4E4E4E;
 }
 
 .task i {
@@ -69,7 +71,7 @@ h1.show-for-medium {
 }
 
 .task:hover {
-  background-color: #D6D6D6;
+  outline: 1px red;
 }
 
 .task-form-column {
@@ -94,11 +96,11 @@ h1.show-for-medium {
 }
 
 .fi-power {
-  color: #F93F40;
+  color: #FFF;
 }
 
 .fi-paperclip {
-  color: #424242;
+  color: #FFF;
 }
 
 .fi-check {
