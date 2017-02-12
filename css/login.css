@@ -1,9 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 body {
+  color: #4E4E4E;
   background-color: #f3f3f3;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 header {
   padding: 40px;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+a {
+  color: #4DD0E1;
+}
+
+.button {
+  background-color: #4DD0E1;
 }
 
 .shake {
@@ -15,9 +30,10 @@ header {
   font-size: 12px;
 }
 
-#btn-signup {
+#btn-signup, #btn-login {
   margin-top: 16px;
 }
+
 
 @keyframes shake {
   10%, 90% {
