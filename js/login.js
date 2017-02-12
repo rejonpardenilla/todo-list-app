@@ -18,7 +18,7 @@
     login();
   });
 
-  $('txt-password').keydown(function(event) {
+  $('#txt-password').keydown(function(event) {
     if (event.keyCode == 13) {
       login();
     }
