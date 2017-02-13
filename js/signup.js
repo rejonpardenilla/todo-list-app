@@ -9,7 +9,7 @@
     messagingSenderId: "584056646121"
   };
   firebase.initializeApp(config);
-  
+  var auth = firebase.auth();
 
   // Listeners
 
@@ -18,15 +18,12 @@
   });
 
   $('#txt-password-2').keydown(function(event) {
-    if (event.keyCode == 13) {
-      login();
-    }
+    if (event.keyCode == 13) signup();
   });
 
   $('#login-link').click(function() {
     window.location.href = "login.html";
   });
-
 
 
   // Procedural functions
@@ -39,25 +36,25 @@
 
     if (password1 == password2) {
 
-      firebase.auth().createUserWithEmailAndPassword(email, password1)
+      auth.createUserWithEmailAndPassword(email, password1)
         .then(function() {
 
           auth.currentUser.updateProfile({
             displayName: name
           }).then(function() {
             window.location.href = 'app.html';
-          }).catch(function( error ) {
-            console.log( error.message );
+          }, function(error) {
+            console.error("Error: " + error.message);
           });
 
         })
         .catch(function(error) {
-          console.log(error.message);
+          console.error("Error: "+ error.message);
           shake();
         });
 
     } else {
-      console.log("The passwords doesn't match");
+      console.error("Error: " + "The passwords doesn't match");
       shake();
     }
   }
