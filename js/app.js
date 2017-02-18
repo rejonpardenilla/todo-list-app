@@ -12,12 +12,12 @@
   var auth = firebase.auth();
   var db = firebase.database();
 
-
   //Listeners
 
   $('.signout-btn').click(function() {
     auth.signOut();
   });
+
 
   $('#input-task').keydown(function(event) {
     if (event.keyCode == 13) addTask();
@@ -33,6 +33,13 @@
 
 
   auth.onAuthStateChanged(function(user) {
+    $('#content').html(
+      '<div class="row column small-12 align-center">' + 
+        '<img src="icons/loading.svg" alt="loading...">' +
+      '</div>'
+    );
+
+
     if (user) fillContent();
     else window.location.href = "login.html";
   });
