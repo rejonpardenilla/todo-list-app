@@ -100,7 +100,8 @@ h1.show-for-medium {
   color: #FFF;
 }
 
-.fi-paperclip {
+.fi-paperclip,
+.fi-checkbox {
   color: #FFF;
 }
 

@@ -28,6 +28,17 @@
     window.location.href = "signup.html";
   });
 
+  $('#fb-button').click(function() {
+    var facebook = new firebase.auth.FacebookAuthProvider();
+
+    firebase.auth()
+      .signInWithPopup(facebook)
+      .catch(function(error) {
+        console.log(error.message);
+        shake();
+      });
+  });
+
   // Listen every for any change in user 
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) window.location.href = "app.html";

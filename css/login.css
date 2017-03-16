@@ -30,8 +30,18 @@ a {
   font-size: 12px;
 }
 
-#btn-signup, #btn-login {
+#btn-signup, 
+#btn-login {
   margin-top: 16px;
+}
+
+#fb-button {
+  margin-top: 32px;
+  background-color: #4267b2;
+}
+
+#fb-button:hover {
+  background-color: #3B5998;
 }
 
 
